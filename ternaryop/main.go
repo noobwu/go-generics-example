@@ -4,6 +4,9 @@ import (
 	"fmt"
 )
 
+/*
+ 三元表达式
+*/
 func ternaryOp[T any](s bool, t func() T, f func() T) T {
 	if s {
 		return t()
